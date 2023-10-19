@@ -53,3 +53,15 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+collections:
+   my_coll:
+      layout: 'iiif-image-page'
+      output: true
+      metadata:
+         source: 'my_coll.csv'
+      images:
+         source: 'raw_images/my_coll' 
+webrick:
+   headers:
+      'Access-Control-Allow-Origin': '*'
